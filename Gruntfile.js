@@ -50,6 +50,18 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js', 'src/*.js'],
       options: {
         jshintrc: true
+      },
+
+      gruntfile: {
+        src: 'Gruntfile.js'
+      },
+
+      src: {
+        src: 'src/*.js'
+      },
+
+      dist: {
+        src: 'dist/restangular.js'
       }
     },
     karma: {
@@ -74,7 +86,7 @@ module.exports = function(grunt) {
         singleRun: true,
         autoWatch: false,
         browsers: ['Firefox'],
-        configFile: 'karma.underscore.conf.js',
+        configFile: 'karma.underscore.conf.js'
       },
       buildUnderscore: {
         configFile: 'karma.underscore.conf.js',
